@@ -1,5 +1,5 @@
 # pefui
-<p>peysh' enhanced figlet user interface</p>
+<p><a href="https://pey.sh/">pey.sh's</a> enhanced figlet user interface</p>
 
 ![Alt text](https://github.com/s0pris/pefui/blob/main/1.png?raw=true)
 ![Alt text](https://github.com/s0pris/pefui/blob/main/2.png?raw=true)
