@@ -11,7 +11,6 @@ for the CLI only version, click [here](#CLI-Only)
 pefui is a simple GUI interface for figlet using yad.
 </p>
 
-<p> <b><i>#todo: add a way to specific desired font</i></b></p>
 <p>
 manual installation:
 </p>
