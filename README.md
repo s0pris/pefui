@@ -3,7 +3,7 @@
 
 ### Place 1
 
-for the CLI only version, click [here](#place-2)
+for the CLI only version, click [here](#CLI-Only)
 
 ![Alt text](https://github.com/s0pris/pefui/blob/main/1.png?raw=true)
 ![Alt text](https://github.com/s0pris/pefui/blob/main/2.png?raw=true)
@@ -71,7 +71,7 @@ and run it by:
 ./pefui.sh
 ```
 
-### Place 2
+### CLI Only
 
 to pull the CLI only version;
 ```bash
