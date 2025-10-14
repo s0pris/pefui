@@ -1,7 +1,6 @@
 # pefui
 <p><a href="https://pey.sh/">pey.sh's</a> enhanced figlet user interface</p>
 
-### Place 1
 
 for the CLI only version, click [here](#CLI-Only)
 
