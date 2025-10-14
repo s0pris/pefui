@@ -1,6 +1,10 @@
 # pefui
 <p><a href="https://pey.sh/">pey.sh's</a> enhanced figlet user interface</p>
 
+### Place 1
+
+for the CLI only version, click [here](#place-2)
+
 ![Alt text](https://github.com/s0pris/pefui/blob/main/1.png?raw=true)
 ![Alt text](https://github.com/s0pris/pefui/blob/main/2.png?raw=true)
 <p>
@@ -67,3 +71,15 @@ and run it by:
 ./pefui.sh
 ```
 
+### Place 2
+
+to pull the CLI only version;
+```bash
+curl -LO https://github.com/s0pris/pefui/blob/main/pefs.sh
+sudo chmod +x pefui.sh
+```
+
+and run it with;
+```bash
+./pefs.sh
+```
