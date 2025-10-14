@@ -1,5 +1,8 @@
 # pefui
-peysh' enhanced figlet user interface
+<p>peysh' enhanced figlet user interface</p>
+
+![Alt text](https://github.com/s0pris/pefui/blob/main/1.png?raw=true)
+![Alt text](https://github.com/s0pris/pefui/blob/main/2.png?raw=true)
 <p>
 pefui is a simple GUI interface for figlet using yad.
 </p>
