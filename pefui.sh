@@ -1,14 +1,11 @@
 #!/usr/bin/env bash
 # pefui.sh - peysh's enhanced figlet user interface (PEFUI)
-# Fully portable, desktop-ready Figlet GUI using Yad or Zenity
 
-# --- Check dependencies ---
 if ! command -v figlet &>/dev/null; then
     echo "figlet is not installed. Please install figlet to use pefui."
     exit 1
 fi
 
-# --- Detect available GUI tool ---
 if command -v yad &>/dev/null; then
     GUI_TOOL="yad"
 elif command -v zenity &>/dev/null; then
@@ -18,7 +15,6 @@ else
     exit 1
 fi
 
-# --- GUI helper functions ---
 gui_entry() {
     local prompt="$1"
     case "$GUI_TOOL" in
@@ -43,18 +39,15 @@ gui_error() {
     esac
 }
 
-# --- Get input text ---
 INPUT="${1:-}"
 if [ -z "$INPUT" ]; then
     INPUT=$(gui_entry "Welcome to pefui\n(Peysh's enhanced figlet user interface)\n=~=~=\nEnter text to display:")
 fi
 [ -z "$INPUT" ] && exit
 
-# --- Determine fonts directory ---
 FONT_DIR=$(figlet -I2)
-[ ! -d "$FONT_DIR" ] && FONT_DIR="/usr/share/figlet"  # fallback
+[ ! -d "$FONT_DIR" ] && FONT_DIR="/usr/share/figlet"  
 
-# --- Generate Figlet output ---
 OUTPUT=""
 for font in "$FONT_DIR"/*.flf; do
     FONT_NAME=$(basename "$font" .flf)
@@ -62,5 +55,4 @@ for font in "$FONT_DIR"/*.flf; do
     OUTPUT+="=== $FONT_NAME ===\n$FIG\n\n"
 done
 
-# --- Display output ---
 gui_textinfo "$OUTPUT"
